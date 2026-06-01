@@ -291,8 +291,11 @@ with tab3:
 
     # Score trend
     st.markdown('<div class="section-header">📊 تطور مؤشر الصحة</div>', unsafe_allow_html=True)
-    st.plotly_chart(chart_health_score(df), use_container_width=True)
-
+    st.plotly_chart(
+    chart_health_score(df),
+    use_container_width=True,
+    key="health_score_chart"
+)
 
 # ════════════════════════════════════════════════════════════════════════
 # TAB 4: Weekly Reports
